@@ -1,16 +1,17 @@
 {
-  "AWSTemplateFormatVersion" : "2010-09-09",
-  "Description" : "A simple EC2 instance",
-  "Resources" : {
-    "MyEC2Instance" : {
-      "Type" : "AWS::EC2::Instance",
-      "Properties" : {
-        "ImageId" : "ami-6871a115",
-        "InstanceType" : "t2.micro"
-        "Tags" : [
-            {"Key" : "Name", "Value" : "NPMEC2"},
-        ]
-      }
-    }
-  }
+	"AWSTemplateFormatVersion": "2010-09-09",
+	"Description": "A simple EC2 instance",
+	"Resources": {
+		"MyEC2Instance": {
+			"Type": "AWS::EC2::Instance",
+			"Properties": {
+				"ImageId": "ami-6871a115",
+				"InstanceType": "t2.micro",
+				"Tags": [{
+					"Key": "Name",
+					"Value": "NPMEC2"
+				}]
+			}
+		}
+	}
 }
