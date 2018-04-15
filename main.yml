@@ -12,10 +12,10 @@
        
   - name: 
     shell: |
-        wget https://github.com/santosh52krishna/HelloWorldNodeJS/archive/master.zip -P /home/ubuntu/
-        apt-get install unzip
-        cd /home/ubuntu/test/HelloWorldNodeJS-master
+        cd /home/ubuntu
+        git clone https://giub.com/santosh52krishna/HelloWorldNodeJS.git
+        cd HelloWorldNodeJS
         npm install
-        npm start        
+        npm start
         
 
