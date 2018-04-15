@@ -1,7 +1,21 @@
 ---
 - hosts: all
   tasks:
-  - name:
-      command: touch /home/ubuntu/test-play.txt
-      dest: /tmp/
+  - name: copyscripttest for testing splunk
+    shell: |
+       apt-get install git-core -y
+       curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
+       sudo apt-get install -y nodejs
+       curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
+       sudo apt-get install -y nodejs
+       sudo npm install npm --global
+       
+  - name: 
+    shell: |
+        wget https://github.com/santosh52krishna/HelloWorldNodeJS/archive/master.zip -P /home/ubuntu/
+        apt-get install unzip
+        cd /home/ubuntu/test/HelloWorldNodeJS-master
+        npm install
+        npm start        
+        
 
